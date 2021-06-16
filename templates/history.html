@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+IMDb API - History
+{% endblock %}
+
+{% block body %}
+
+<h1 class="search-result-title">History Searchs: </h1>
+
+<ul class="history-container">
+    {% for hist in history %}
+        <li id="movie-request">{{ hist }}</li>
+    {% endfor %}
+</ul>
+
+{% if refreshing %}
+<div class="refresh-container">
+    <a class="refresh" href="{{ url_for('refresh') }}">Refresh</a>
+</div>
+{% else %}
+<div class="refresh-container">
+    <a class="refresh" href="{{ url_for('index') }}">Search</a>
+</div>
+{% endif %}
+
+{% endblock %}

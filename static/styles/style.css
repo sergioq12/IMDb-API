@@ -1,0 +1,229 @@
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+a {
+  color: #2f3640;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.nav-container {
+  background: #f3ce13;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 37%;
+  list-style: none;
+}
+
+#title {
+  color: white;
+  background-color: #2f3640;
+  padding: 2rem;
+  border-radius: 3rem;
+  position: relative;
+}
+
+.search-box {
+  background: #2f3640;
+  height: 10rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  width: 60%;
+  margin: auto;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  padding-top: 2.9rem;
+}
+
+.search-button {
+  float: right;
+  background: #2f3640;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  margin-left: 2rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+.search-result-title {
+  width: 100%;
+  font-size: 10rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.else-result {
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#movie-request {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.movies-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.movie-container {
+  width: 40rem;
+  height: 70rem;
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+.img-card {
+  width: 40rem;
+  height: 70rem;
+  object-fit: cover;
+}
+
+.year-card {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+
+.year-card h3 {
+  font-size: 5rem;
+  color: white;
+}
+
+.rank-card {
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+  right: 0.5rem;
+}
+
+.rank-card h2 {
+  font-size: 7rem;
+  color: #f3ce13;
+  text-align: right;
+}
+
+.history-container {
+  margin: 7rem 20rem;
+}
+
+.history-container li {
+  font-size: 6.5rem;
+}
+
+.refresh-container {
+  display: flex;
+  justify-content: center;
+}
+
+.refresh {
+  background-color: #2f3640;
+  color: white;
+  font-size: 5rem;
+  border-radius: 5rem;
+  padding: 2rem;
+}
+
+.refresh:hover {
+  background-color: #f3ce13;
+  color: black;
+}
+
+.info-p {
+  margin: 5rem 20rem;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  text-align: justify;
+}
+
+.imdb-logo {
+  width: 80rem;
+  height: 41rem;
+  display: flex;
+  margin: 7rem auto;
+  margin-top: 3rem;
+}
