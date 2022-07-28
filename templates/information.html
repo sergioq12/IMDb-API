@@ -1,26 +1,30 @@
-{% extends "layout.html" %}
-
-{% block title %}
-IMDb API - Information
-{% endblock %}
-
-{% block body %}
-<h1 class="search-result-title">IMDb API</h1>
+{% extends "layout.html" %} {% block title %} IMDb API - Information {% endblock
+%} {% block body %}
+<h1 class="search-result-title" style="font-weight: bold; font-size: 40px">
+  IMDb API
+</h1>
 
 <p class="info-p">
-    You can search movies of your selection and see throughout the IMDb API 
-    which movies with the search name have. Their name, year of release, and IMDb ranking
-    will show up. 
-    <br>
-    <br>
+  You can search movies of your selection and see throughout the IMDb API which
+  movies with the search name have. Their name, year of release, and IMDb
+  ranking will show up.
+  <br />
+  <br />
 
-    Additionally, you could see the history searches. The latest 10 searches the user has made
-    are going to show up. You can refresh the history searches and all will be deleted. 
-    <br>
-    <br>
+  Additionally, you could see the history searches. The latest 10 searches the
+  user has made are going to show up. You can refresh the history searches and
+  all will be deleted.
+  <br />
+  <br />
 </p>
 
-<img class="imdb-logo" src="{{ url_for('static', filename='images/IMDb-logo.png') }}" alt="IMDb Logo Picture">
+<img
+  class="imdb-logo"
+  src="{{ url_for('static', filename='images/IMDb-logo.png') }}"
+  alt="IMDb Logo Picture"
+/>
 
-<h2 class="search-result-title">Enjoy the IMDb API!</h2>
+<h2 class="search-result-title" style="margin-bottom: 30px">
+  Enjoy the IMDb API!
+</h2>
 {% endblock %}

@@ -11,24 +11,24 @@ html {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 2.5rem;
   font-family: "Lato", sans-serif;
   font-weight: lighter;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 p {
-  font-size: 2.5rem;
+  font-size: 0.5rem;
 }
 
 li {
@@ -36,7 +36,7 @@ li {
 }
 a {
   color: #2f3640;
-  font-size: 4rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -50,8 +50,8 @@ a:hover {
 
 nav {
   width: 80%;
+  height: 15vh;
   margin: auto;
-  min-height: 10vh;
   padding: 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,58 +78,60 @@ nav ul {
 #title {
   color: white;
   background-color: #2f3640;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 3rem;
   position: relative;
 }
 
+#title h1 {
+  font-size: 2rem;
+}
+
+.container-form {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-box {
-  background: #2f3640;
-  height: 10rem;
-  border-radius: 3rem;
-  padding: 1rem;
-  width: 60%;
-  margin: auto;
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  padding-top: 2.9rem;
+  background-color: #2f3640;
+  width: 400px;
+  height: 45px;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .search-button {
-  float: right;
-  background: #2f3640;
-  width: 4rem;
-  height: 4rem;
+  width: 100px;
+  height: 100px;
+  background-color: #2f3640;
   border-radius: 50%;
-  display: flex;
-  margin-right: 2rem;
-  justify-content: center;
-  align-items: center;
   color: black;
+  flex: 1;
 }
 
 .search-txt {
+  flex: 5;
+  background-color: #2f3640;
   border: none;
-  background: none;
   outline: none;
-  float: left;
-  padding: 0;
-  margin-left: 2rem;
+  margin-left: 20px;
+  width: 320px;
   color: white;
-  font-size: 2rem;
-  line-height: 4rem;
-  font-size: 4rem;
+  font-size: 20px;
 }
 
 .search-result-title {
   width: 100%;
-  font-size: 10rem;
+  font-size: 3rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .else-result {
-  font-size: 8rem;
+  font-size: 3rem;
   width: 100%;
   text-align: center;
   margin-top: 10rem;
@@ -143,7 +145,7 @@ nav ul {
 .movies-container {
   width: 80%;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -151,26 +153,30 @@ nav ul {
 }
 
 .movie-container {
-  width: 40rem;
-  height: 70rem;
+  width: 15rem;
+  height: 25rem;
   position: relative;
-  margin-bottom: 15rem;
+  margin-bottom: 8rem;
 }
 
 .img-card {
-  width: 40rem;
-  height: 70rem;
+  width: 15rem;
+  height: 25rem;
   object-fit: cover;
 }
 
 .year-card {
   position: absolute;
-  top: 2rem;
-  left: 1.5rem;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+.title-card h2 {
+  font-size: 2rem;
 }
 
 .year-card h3 {
-  font-size: 5rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -182,17 +188,17 @@ nav ul {
 }
 
 .rank-card h2 {
-  font-size: 7rem;
+  font-size: 2rem;
   color: #f3ce13;
   text-align: right;
 }
 
 .history-container {
-  margin: 7rem 20rem;
+  margin: 2rem 20rem;
 }
 
 .history-container li {
-  font-size: 6.5rem;
+  font-size: 3rem;
 }
 
 .refresh-container {
@@ -203,9 +209,9 @@ nav ul {
 .refresh {
   background-color: #2f3640;
   color: white;
-  font-size: 5rem;
+  font-size: 2rem;
   border-radius: 5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .refresh:hover {
@@ -214,16 +220,17 @@ nav ul {
 }
 
 .info-p {
-  margin: 5rem 20rem;
+  margin: 2rem 10rem;
   margin-bottom: 3rem;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
 .imdb-logo {
-  width: 80rem;
-  height: 41rem;
+  width: 30rem;
+  height: 15rem;
   display: flex;
   margin: 7rem auto;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }

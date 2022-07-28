@@ -1,32 +1,33 @@
-{% extends 'layout.html' %} 
-{% block head %}
+{% extends 'layout.html' %} {% block head %}
 <script
   src="https://kit.fontawesome.com/1f592f01af.js"
-  crossorigin="anonymous"
-></script>
+  crossorigin="anonymous"></script>
 {% endblock %} 
-
-{% block title %} 
-My Website 
-{% endblock %} 
+{% block title %} My Website {% endblock %} 
 
 {% block body %}
-<div class="search-box">
-  <form id="movie-form" action="{{ url_for('movies') }}" method="post">
-    <input
-      class="search-txt"
-      type="text"
-      name="search-request"
-      placeholder="Search Movie Info..."
-    />
-    <a
-      class="search-button"
-      onclick="document.getElementById('movie-form').submit();"
-    >
-      <i class="fas fa-search"></i>
-    </a>
-  </form>
+<div class="container-form">
+  <div class="search-box">
+    <form id="movie-form" action="{{ url_for('movies') }}" method="post">
+      <input
+        class="search-txt"
+        type="text"
+        name="search-request"
+        placeholder="Search Movie Info..."
+      />
+      <a
+        class="search-button"
+        onclick="document.getElementById('movie-form').submit();"
+      >
+        <i class="fas fa-search"></i>
+      </a>
+    </form>
+  </div>
 </div>
 
-<img class="imdb-logo" src="{{ url_for('static', filename='images/IMDb-logo.png')}}" alt="IMDb Logo Picture">
+<img
+  class="imdb-logo"
+  src="{{ url_for('static', filename='images/IMDb-logo.png')}}"
+  alt="IMDb Logo Picture"
+/>
 {% endblock %}
