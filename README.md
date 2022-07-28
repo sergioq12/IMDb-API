@@ -10,4 +10,7 @@ This application uses Flask Sessions in order to save the user history search. T
 
 This is a simple project with the main goal of using Flask and APIs together.
 
+![alt text](https://github.com/sergioq12/IMDb-API/blob/master/readme-images/IMDb%20site%201.png)
+![alt text](https://github.com/sergioq12/IMDb-API/blob/master/readme-images/IMDb%20site%202.png)
+
 Enjoy :)
